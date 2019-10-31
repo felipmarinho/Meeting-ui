@@ -17,6 +17,12 @@ module.exports = {
                 use: {
                     loader: 'babel-loader'
                 }
+            }, {
+                test: /\.css$/,
+                use: [
+                    { loader: 'style-loader'}, // vai pegar os arquivos que fizemos em CSS e adicionar no HTML.
+                    { loader: 'css-loader'}, // Vai auxiliar com importações realizadas de dentro do arquivo css
+                ]
             }
         ]
     }
