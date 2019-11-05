@@ -1,10 +1,10 @@
 import React from 'react'; // Sempre que eu usar a sintaxe jsx (html) o React precisa estar presente no arquivo.
 import './App.css';
 
-import draw_001 from './assets/draw_001.png';
+import TechList from './components/TechList';
 
 function App() {
-    return <img width="200" src={draw_001} />
+    return <TechList />
 }
 
 export default App;
