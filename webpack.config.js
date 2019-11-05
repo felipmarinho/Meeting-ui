@@ -23,6 +23,12 @@ module.exports = {
                     { loader: 'style-loader'}, // vai pegar os arquivos que fizemos em CSS e adicionar no HTML.
                     { loader: 'css-loader'}, // Vai auxiliar com importações realizadas de dentro do arquivo css
                 ]
+            },
+            {
+                test: /.*\.(gif|png|jpe?g)$/i,
+                use: [
+                    {loader: 'file-loader'}
+                ]
             }
         ]
     }
